@@ -1,7 +1,10 @@
-const name = '"Генератор защитного поля"';
-let price = 1000;
+const logItems = function(array) {
+  // твой код
+};
 
-console.log(`Выбран ${name}, цена за штуку ${price} кредитов.`);
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
 
-price = 2000;
-console.log(`Выбран ${name}, цена за штуку ${price} кредитов.`);
+logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
