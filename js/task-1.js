@@ -1,12 +1,9 @@
-const logItems = function(array) {
-  // твой код
+const logItems = function (items) {
+  for (let i = 0; i < items.length; i += 1) {
+    const message = `Позиция ${i + 1} - ${items[i]}`;
+    console.log(message);
+  }  
 };
-
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
-
-logItems ();
 
 logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
 
