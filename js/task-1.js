@@ -1,7 +1,6 @@
 const logItems = function (items) {
   for (let i = 0; i < items.length; i += 1) {
-    const message = `Позиция ${i + 1} - ${items[i]}`;
-    console.log(message);
+    console.log(`Позиция # ${i + 1} - ${items[i]}`);
   }  
 };
 
