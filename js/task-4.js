@@ -1,12 +1,6 @@
-const formatString = function (string) {
-  
+const formatString = function (string) {  
   const stringLength = string.length;
-  
-  // if (stringLength <= 40) {
-  //   console.log(string);
-  // } else {
-  //   console.log(string.slice(0, 40) + '...');
-  // }
+
 
   return stringLength <= 40 ? console.log(string) : console.log(string.slice(0, 40) + '...');
 };
