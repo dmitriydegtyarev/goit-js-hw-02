@@ -23,12 +23,15 @@ while (true) {
   }
 
   numbers.push(input);
-  total += input;
+  // total += input;
 };
+
+console.log(numbers);
+
+for (const number of numbers) {
+  total += number
+}
 
 if (numbers.length > 0) {
    console.log(`Сумма элементов массива = ${total}`);
 };
-  
-
-console.log(numbers);
