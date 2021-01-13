@@ -28,21 +28,19 @@ const isLoginUnique = function (allLogins, login) {
 
 const addLogin = function (allLogins, login) {
 
-  if (isLoginValid(login) === true) {
+  if (isLoginValid(login)) {
     console.log('Ошибка! Логин должен быть от 4 до 16 символов');
     return
   }
 
-  if (isLoginUnique(allLogins, login) === true) {
+  if (isLoginUnique(allLogins, login)) {
     console.log(`Логин ${login} уже используется!`);
     return;
   }
 
-  if (isLoginUnique(allLogins, login) === false) {
-    logins.push(login);
-    console.log(`Логин ${login} успешно добавлен!`);
-    console.log(logins);
-  }
+  logins.push(login);
+  console.log(`Логин ${login} успешно добавлен!`);
+  console.log(logins);
 };
 
 addLogin(logins, 'Ajax'); // 'Логин успешно добавлен!'
